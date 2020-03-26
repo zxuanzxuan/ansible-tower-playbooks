@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo useradd -m -s /bin/bash ansible
 echo 'ansible ALL=(ALL:ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 sudo runuser -l ansible -c 'mkdir /home/ansible/.ssh'
